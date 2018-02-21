@@ -1,5 +1,7 @@
 # Jupyter Lab Tensorflow Docker Image
 
+![Build Badge](https://img.shields.io/docker/automated/eddify/jupyterlab-tensorflow.svg)
+
 I've been wanting to experiment with the new [Jupyter Labs Notebooks](https://github.com/jupyterlab/jupyterlab) in my machine learning projects.
 
 It's described as:
