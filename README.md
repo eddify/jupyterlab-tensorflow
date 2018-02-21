@@ -1,4 +1,4 @@
-# docker-jupyterlab-tensorflow
+# Jupyter Lab Tensorflow Docker Image
 
 I've been wanting to experiment with the new [Jupyter Labs Notebooks](https://github.com/jupyterlab/jupyterlab) in my machine learning projects.
 
@@ -8,7 +8,7 @@ It's described as:
 JupyterLab is the next-generation user interface for Project Jupyter. It offers all the familiar building blocks of the classic Jupyter Notebook (notebook, terminal, text editor, file browser, rich outputs, etc.) in a flexible and powerful user inteface that can be extended through third party extensions. Eventually, JupyterLab will replace the classic Jupyter Notebook after JupyterLab reaches 1.0.
 ```
 
-This dockerfile builds a jupyter lab instance long with the usual goodies:
+This dockerfile builds a jupyter lab instance with tensorflow 1.5 and cuda 9 drivers:
 - python 3.6
 - pillow
 - h5py
