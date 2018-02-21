@@ -1,6 +1,6 @@
 # docker-jupyterlab-tensorflow
 
-I've been wanting to experiment with the slick (Jupyter Labs Notebooks)[https://github.com/jupyterlab/jupyterlab] in my machine learning projects.
+I've been wanting to experiment with the new [Jupyter Labs Notebooks](https://github.com/jupyterlab/jupyterlab) in my machine learning projects.
 
 It's described as:
 
