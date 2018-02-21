@@ -22,9 +22,17 @@ This dockerfile builds a jupyter lab instance long with the usual goodies:
 - nvidia cudnn 7.0.5.15
 
 ### Requirements
-- ubuntu or equivalent OS
-- cuda compatible gpu https://en.wikipedia.org/wiki/CUDA
-- host nvidia drivers and cuda http://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#package-manager-installation
-- docker https://docs.docker.com/install/
-- nvidia-docker https://github.com/NVIDIA/nvidia-docker
-- docker https://docs.docker.com/install/
+- [nvidia-docker runtime >=2](https://github.com/NVIDIA/nvidia-docker) 
+- GNU/Linux x86_64 with kernel version > 3.10
+- [Docker >= 1.12](https://docs.docker.com/install/)
+- NVIDIA GPU with Architecture > Fermi (2.1)
+- NVIDIA drivers ~= 361.93
+
+### How to Run
+
+```
+nvidia-docker -v /host/notebook/dir:/home/jupyterlab -p 8888:8888 run eddify/jupyterlab-tensorflow:latest
+```
+Note: Make sure to replace ```/host/notebook/dir``` with your own host path.
+
+If you look at the docker output, it will output a url with a token, open the url in your browser.
